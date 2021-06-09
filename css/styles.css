@@ -279,11 +279,13 @@
 
 
 /* MOBILE SCREEN */
-@media only screen 
-  and (min-device-width: 360px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-    
+
+@media only screen and (max-width: 1300px){}
+@media only screen and (max-width: 1000px){}
+@media only screen and (max-width: 768px){
+    .header__menu{
+        display: none;
+    }
     .jumbotron__title{
         margin: 0px 15px;
         width: 80%;
@@ -308,4 +310,33 @@
         padding-top: 10px;
     }
 }
+@media only screen and (max-width: 320px){
+    .header__menu{
+        display: none;
+    }
+    .jumbotron__title{
+        margin: 0px 15px;
+        width: 80%;
+    }
+    #services{
+        height: 900px;
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .services__container{
+        display: flex;
+        flex-direction: column;
+    }
+    #contact{
+        height: 100%;
+        flex-direction: column;
+    }
+    .contact__icons{
+        flex-direction: column;
+    }
+    .icon-card{
+        padding-top: 10px;
+    }
+}
+
 
